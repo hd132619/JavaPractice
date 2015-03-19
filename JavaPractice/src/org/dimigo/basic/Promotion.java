@@ -14,7 +14,7 @@ public class Promotion {
 		System.out.println("점포 수 : " + String.format("%,d", shop) + "개");
 		System.out.println("\n");
 		year = (long)month * 12 * number * shop;
-		System.out.println("연간 인건비 : " + String.format("%,d", year));
+		System.out.println("연간 인건비 : " + String.format("%,d", year) + "원");
 	}
 
 }
