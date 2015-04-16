@@ -20,7 +20,7 @@ public class CarTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Car car = new Car();
+		Car2 car = new Car2();
 		
 		System.out.println("<< 제조사 목록 >>");
 		System.out.println("제조사명 : " + car.getCompany());
@@ -30,7 +30,23 @@ public class CarTest {
 		System.out.println("가격 : " + String.format("%,d", car.getPrice()) + "원");
 		System.out.println("");
 		
-		car.setCompany("기아자동차");
+		car = new Car2("기아자동차", "K7", "흰색", 246, 40000000);
+		System.out.println("제조사명 : " + car.getCompany());
+		System.out.println("모델명 : " + car.getModel());
+		System.out.println("색상 : " + car.getcolor());
+		System.out.println("최대속도 : " + car.getMaxSpeed() + "km");
+		System.out.println("가격 : " + String.format("%,d", car.getPrice()) + "원");
+		System.out.println("");
+		
+		car = new Car2("삼성자동차", "SM7", "회색", 200, 38000000);
+		System.out.println("제조사명 : " + car.getCompany());
+		System.out.println("모델명 : " + car.getModel());
+		System.out.println("색상 : " + car.getcolor());
+		System.out.println("최대속도 : " + car.getMaxSpeed() + "km");
+		System.out.println("가격 : " + String.format("%,d", car.getPrice()) + "원");
+		System.out.println("");
+		/*
+		 car.setCompany("기아자동차"); 
 		System.out.println("제조사명 : " + car.getCompany());
 		car.setModel("K7");
 		System.out.println("모델명 : " + car.getModel());
@@ -52,6 +68,7 @@ public class CarTest {
 		System.out.println("최대속도 : " + car.getMaxSpeed() + "km");
 		car.setPrice(38000000);
 		System.out.println("가격 : " + String.format("%,d", car.getPrice()) + "원");
+		*/
 	}
 
 }
